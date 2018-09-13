@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
 
+//Import our new modules
+import { ModuloEmailModule } from './moduloemail/moduloemail.module';
+
 //Components
 import { AppComponent } from './app.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
@@ -25,7 +28,8 @@ import { KeeperComponent } from './components/keeper/keeper.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    ModuloEmailModule
   ],
   providers: [
     appRoutingProviders
