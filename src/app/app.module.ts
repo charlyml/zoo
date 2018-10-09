@@ -5,6 +5,7 @@ import { routing, appRoutingProviders } from './app.routing';
 
 //Import our new modules
 import { ModuloEmailModule } from './moduloemail/moduloemail.module';
+import { AdminModule } from './admin/admin.module';
 
 //Components
 import { AppComponent } from './app.component';
@@ -29,7 +30,8 @@ import { KeeperComponent } from './components/keeper/keeper.component';
     BrowserModule,
     FormsModule,
     routing,
-    ModuloEmailModule
+    ModuloEmailModule,
+    AdminModule
   ],
   providers: [
     appRoutingProviders
